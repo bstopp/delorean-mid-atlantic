@@ -1,0 +1,32 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% set page_title = "Errror 404" %}
+{% set page_description = "This is the error page" %}
+{% set page_keywords = "keywords, keywords, keywords" %}
+
+{% set page_id = "error" %}
+
+{% block content %}
+
+<h1>This is the error page</h1>
+    
+    <div class="image-banner" style="background-image:url('images/backgrounds/watermark-map.png')">
+        <div class="container">
+            <div class="image-banner-container">
+                <div class="image-banner-copy">
+                    <h1>Error 404</h1>
+                    <p>Email the club officers at: <a href="mailto:officers@deloreanmidatlantic.com">officers@deloreanmidatlantic.com</a></p>
+                    <p><small>* While we may receive requests for DeLorean rentals, we are not a rental agency. As a courtesy, we will forward requests to our member base but can make no guarantee someone will be able to attend your event. All aspects of your agreement are between the 2 parties.</small></p>
+                </div>
+                <div class="image-banner-photo">
+                    <div class="image-banner-photo-spacer" title="" style="background-image:url('uploads/spring-social.png');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end .hero-banner -->
+
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
+    
+{% endblock %}

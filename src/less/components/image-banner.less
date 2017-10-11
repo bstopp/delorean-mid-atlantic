@@ -1,0 +1,89 @@
+
+/* Image Banner component
+==================================== */
+
+.contact-us .image-banner { 
+    background-image: url('images/backgrounds/watermark-map.png');
+}
+
+.image-banner { 
+    background-color: #cacaca;
+    background-size: cover;
+    background-position: center center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .image-banner-container { 
+        background: #fff;
+        padding: 15px;
+        width: 100%;
+        .image-banner-copy { 
+            h1 { }
+            h2 { }
+            h3 { }
+            p { }
+            small { 
+                line-height: 1.0em;
+            }
+        }
+        .image-banner-photo { 
+            .image-banner-photo-spacer { 
+                display: block;
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                // scaling based on image size ratio
+                // image size 415 x 360
+                // 100/(415/360) = 
+                padding-bottom: 86.7469877846%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) { 
+    .image-banner { 
+        .image-banner-container { 
+            padding: 20px;
+            .image-banner-photo { 
+                // display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .image-banner { 
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-top-width: 3px;
+        border-bottom-width: 3px;
+        .image-banner-container {
+            padding: 30px;
+            
+            .image-banner-copy { 
+                // display: table-cell;
+                // vertical-align: center;
+            }
+            .image-banner-photo { 
+                // display: table-cell;
+                .image-banner-photo-spacer { }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .image-banner { 
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .image-banner { 
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}

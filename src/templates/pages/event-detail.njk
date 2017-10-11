@@ -1,0 +1,129 @@
+<!-- event-detail.njk -->
+{% extends "layouts/layout.njk" %}
+
+{% set page_title = "Event Detail page" %}
+{% set page_description = "This is the event detail page" %}
+{% set page_keywords = "keywords, keywords, keywords" %}
+
+{% set page_id = "event-detail" %}
+
+{% block content %}
+
+      
+    <div class="event-hero-banner">
+        <div class="container">
+            <div class="event-hero-banner-container">
+                <h1 class="event-hero-title">{{ name }}</h1>
+                <h2 class="event-hero-date">Date {{ itinerary.date }}</h2>
+<h4 class="event-hero-location"><a href="#">{{ itinerary.location }}</a></h4>
+                <h2 class="event-hero-date">Date</h2>
+                <h4 class="event-hero-location"><a href="#">Paul Miller Porsche</a></h4>
+                <h4 class="event-hero-address"><a href="#">3419 Route 46 Parsipanny, New Jersey 07054</a></h4>  
+            </div>
+        </div><div class="event-hero-banner-image" style="background-image:url('uploads/spring-social-banner.png')"></div>
+    </div>
+    <!-- end .event-hero-banner -->
+
+        
+    <div class="main-content">
+        <div class="container">
+            
+            <div class="event-details">
+                <section>
+                    <div class="row">
+                        <div class="event-detail-img-col col-sm-5">
+                            <img src="uploads/door-adjustment.png" />
+                        </div>
+                        <div class="event-detail-copy-col col-sm-7">
+                            <h3 class="event-section-title">Tech Event &amp; Lunch</h3>
+                            <h5 class="event-section-subtitle">9:00 AM - 4:00 PM</h5>
+                            <div class="event-section-description">
+                                
+                                <div class="rte">
+                                    <p>The events during the day will take place at Paul Miller Porsche. The Spring Social will kick off around 9:00am with vehicle inspection by <b>Rob Grady</b> as well as door adjustments.</p> 
+                                    <p>Light breakfast items will be provided by the club.</p> 
+                                    <p>We will be having a BBQ lunch by Chef’s Catering. The menu includes: hamburgers, hot dogs, bratwurst, sausage and chicken fresh off the grill. Other items include tossed salad, roasted potatos, pasta  salad and tomato and corn salada with chips, as well as cake and cookies for dessert. <b>The cost of lunch is $10 per person.</b></p>
+                                    <p>Officer elections for President, Treasurer and Secretary (2 year terms) will be up for voting. If you are interested in running, please contact <a href="#">officers@deloreanmidatlantic.com</a> prior to the event.</p>  
+                                </div>
+                                
+                            </div>
+                            <h5 class="event-section-deadline">Sign up Deadline: April 17</h5>
+                            <div class="event-member-requirement">
+                                <p>* You MUST be a 2017 Paid Member to attend this event. Membership signups after October 1, 2016 also count as membership for all of 2017. <a href="#">Click here</a> to become a member.</p>
+                            </div>
+                            <div class="event-paypal-form">
+                              <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input name="cmd" value="_cart" type="hidden">
+                        <input name="business" value="paypal@deloreanmidatlantic.com" type="hidden">
+                        <input name="lc" value="US" type="hidden">                            
+                        <input name="item_name" value="DMA SS17 Lunch Registration" type="hidden">
+                        <input name="button_subtype" value="products" type="hidden">
+                        <input name="no_note" value="0" type="hidden">
+                        <input name="cn" value="Add special instructions to the seller" type="hidden">
+                        <input name="no_shipping" value="2" type="hidden">
+                        <input name="currency_code" value="USD" type="hidden">
+                        <input name="add" value="1" type="hidden">
+                        <input name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted" type="hidden">
+                        <table>
+                        <tbody><tr><td><input name="on0" value="Lunch" type="hidden"><b>Lunch</b></td></tr><tr><td><select name="os0">
+                         <option value="Yes">Lunch - $10.00 USD Per Person</option>
+                        </select> </td></tr>
+                            <tr><td><br><input name="on1" value="Service" type="hidden">Tech Service Signup</td></tr><tr><td><select name="os1">
+                         <option value="Door Adjustment &amp; Vehicle Inspection">Door Adjustment &amp; Vehicle Inspection </option>
+                         <option value="Door Adjustment Only">Door Adjustment Only </option>
+                         <option value="Vehicle Inspection Only">Vehicle Inspection Only </option>
+                         <option value="No Services Needed">No Services Needed </option>
+                        </select> </td></tr>
+                        </tbody></table><br>
+                        <input name="currency_code" value="USD" type="hidden">
+                        <input name="option_select0" value="Yes" type="hidden">
+                        <input name="option_amount0" value="10.00" type="hidden">
+                        <input name="option_index" value="0" type="hidden">
+                        <input src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0">
+                        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" class="fjqxthszylslwzcznvxw" width="1" height="1" border="0">
+                        </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <div class="row">
+                        <div class="event-detail-img-col col-sm-5">
+                            <img src="uploads/restaurant.png" />
+                        </div>
+                        <div class="event-detail-copy-col col-sm-7">
+                            <h3 class="event-section-title">Dinner</h3>
+                            <h5 class="event-section-subtitle">5:00 PM - 8:00 PM</h5>
+                            <h6 class="event-section-heading"><b><a href="#">Moris Tap &amp; Grill</a></b></h6>
+                            <h6 class="event-section-heading"><a href="#">500 Route 10 West Randolph, New Jersey</a></h6>
+                            <p>Please note, the DMA will NOT be collecting payment for dinner. This way everyone may order what they wish from the menu that suits their indivudual tastes and budget.</p>
+                            <p>We will need a final count to the restaurant in advance, so when signing up, please be sure to indicate in the drop down menu whether or not you will be attending dinner.</p>
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <div class="row">
+                        <div class="event-detail-img-col col-sm-5">
+                            <img src="uploads/hotel.png" />
+                        </div>
+                        <div class="event-detail-copy-col col-sm-7">
+                            <h3 class="event-section-title">Hotel</h3>
+                            <h6 class="event-section-heading"><b><a href="#">Marriott Fairfield Inn &amp; Suites</a></b></h6>
+                            <h6 class="event-section-heading"><a href="#">13535 Route 46 Parsippany, New Jersey 07054</a></h6>
+                                Phone: (973) 263-0095
+                            <p><b>Reservation name: DeLorean Mid-Atlantic</b></p>
+                            <p><b>A limited number of rooms are available at the discounted rate of $79 per night for either Friday April 22 or April 23. The hotel is located less than 1/4 from the event location. </b></p>
+                            <h5 class="event-section-deadline">Hotel Deadline: April 17</h5>
+                            <p>* Attendees are responsible for making thier own Hotel Reservations</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- end .main-content -->
+    
+
+{% endblock %}

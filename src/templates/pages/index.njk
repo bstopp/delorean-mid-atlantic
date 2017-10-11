@@ -1,0 +1,50 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% set page_title = "Home page" %}
+{% set page_description = "This is the home page" %}
+{% set page_keywords = "keywords, keywords, keywords" %}
+
+{% set page_id = "home" %}
+
+{% block content %}
+
+<h1>This is the index page</h1>
+
+<div style="display:none;">
+    <div class="homepage-hero">
+        <div class="homepage-hero-img"></div>
+        <div class="container">
+            <div class="homepage-hero-copy">
+                <h1 class="homepage-hero-title"><span class="homepage-hero-pretitle">The</span> DeLorean Mid-Atlantic Club</h1>
+                <p class="homepage-hero-description">The DeLorean Mid-Atlantic Club was founded in 1992 and we the largest and oldest DeLorean owner and enthusiast based club in the east coast area. We have active members from CT, DC, MD, NJ, NY, PA, VA and other surrounding areas — including several members worldwide.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="member-banner">
+        <div class="member-banner-copy">
+            <h2 class="member-banner-title">Become a Member</h2>
+            <p class="member-banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum dolor. Nam pharetra risus sem, ut posuere mi blandit vel. Cras gravida justo molestie consectetur varius. Proin lobortis velit ut neque molestie malesuada.</p>
+            <a href="#" class="button" role="button">Join Now</a>
+        </div>
+        <div class="member-banner-photo">
+            <div class="member-banner-photo-spacer" title="" style="background-image:url('uploads/group-photo.png');"></div>
+        </div>
+    </div>
+    <!-- end .member-banner -->
+    
+    <div class="events-banner">
+        <div class="events-banner-photo">
+            <div class="events-banner-photo-spacer" title="" style="background-image:url('uploads/tech-inspection.png');"></div>
+        </div>
+        <div class="events-banner-copy">
+            <h2 class="events-banner-title">Upcoming Events</h2>
+            <p class="events-banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum dolor. Nam pharetra risus sem, ut posuere mi blandit vel. Cras gravida justo molestie consectetur varius. Proin lobortis velit ut neque molestie malesuada.</p>
+            <a href="#" class="button button-invert" role="button"><script> var d = new Date(); var intYear = d.getFullYear(); document.write(intYear); </script> Events</a>
+        </div>
+    </div>
+    <!-- end .events-banner -->
+</div>
+
+{% endblock %}

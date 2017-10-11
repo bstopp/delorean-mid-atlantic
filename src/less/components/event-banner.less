@@ -1,0 +1,108 @@
+
+/* Upcoming Events banner component
+==================================== */
+
+.events-banner { 
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    .events-banner-photo { 
+        .events-banner-photo-spacer {
+            background-size: cover;
+            background-position: center center;
+            display: block;
+            padding-bottom: 55%;
+        }
+    }
+    .events-banner-copy {  
+        .events-banner-title { 
+            margin: 0;
+            color: #fff;
+        }
+        .events-banner-description { 
+            margin: 5px 0 10px 0;
+        }
+        .button { 
+            margin: 10px 0 5px 0;
+        }
+    }
+}
+
+@media (max-width: 767px) { 
+    .events-banner { 
+        .events-banner-photo {            
+            .events-banner-photo-spacer {
+                background-size: 150%;
+                width: 100%;
+                height: auto;        
+            }
+        }
+        .events-banner-copy { 
+            padding: 25px;
+            .button { 
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .events-banner { 
+        display: table;
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 100%;
+        // acts as min-height
+        height: 270px;
+        .events-banner-copy { 
+            padding: 40px 0;
+            padding-right: ~'calc(50% - 360px)';
+            padding-left: 30px;
+            width: 50%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .events-banner-photo { 
+            width: 50%;
+            display: table-cell;
+            vertical-align: top;
+            .events-banner-photo-spacer {
+                min-height: 250px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) { 
+    .events-banner { 
+        .events-banner-copy { 
+            width: 60%;
+            padding-right: ~'calc(50% - 420px)';
+            padding-left: 50px;
+            .button { 
+                margin: 15px 0 10px 0;
+            }
+        }
+        .events-banner-photo { 
+            width: 40%;
+            .events-banner-photo-spacer {
+                min-height: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) { 
+    .events-banner { 
+        .events-banner-copy { 
+            width: 60%;
+            padding-right: ~'calc(50% - 525px)';
+            padding-left: 75px;
+        }
+        .events-banner-photo { 
+            width: 40%;
+            .events-banner-photo-spacer {
+                min-height: 350px;
+            }
+        }
+    }
+}

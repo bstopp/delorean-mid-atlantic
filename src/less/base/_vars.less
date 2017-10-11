@@ -1,0 +1,39 @@
+// this file is for variables and mixins only 
+// do not put classes or IDs in here or they will be duplicated across all less files that import this
+
+
+// Color Palette 
+// ====================================
+
+@burnt-orange       : #BE6B3F;
+@oxford-blue        : #4B5968;
+@light-grey         : #DCDBDD;
+@stainless-grey     : #A8A8B0;
+@slate-grey         : #6C6B73;
+@charcoal           : #3F4048;
+@red                : #B7003F;
+
+
+// Media Queries
+// ====================================
+@screen-xs          : 480px;
+@screen-sm          : 768px;
+@screen-md          : 992px;
+@screen-lg          : 1200px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max      : (@screen-sm - 1);
+@screen-sm-max      : (@screen-md - 1);
+@screen-md-max      : (@screen-lg - 1);
+
+// Container sizes
+@container-sm       : ((720px + @grid-gutter-width));
+@container-md       : ((940px + @grid-gutter-width));
+@container-lg       : ((1024px + @grid-gutter-width));
+
+
+// Grid System
+// ====================================
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width  : 30px;
+@grid-columns       : 12;

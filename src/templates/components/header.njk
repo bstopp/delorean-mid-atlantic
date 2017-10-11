@@ -1,0 +1,24 @@
+<!-- header.njk -->
+
+<header>
+   <div class="header-container">
+        <div class="header__logo">
+           <a href="http://www.deloreanmidatlantic.com"><img src="img/logos/DMA-logo-header.png" alt="DMA" /></a>
+        </div>        
+        <div class="header__nav">
+            <div class="header__nav-mobile">
+                <a id="header__nav-mobile__toggle" href="#!"><span></span></a>
+            </div>
+            <nav class="header__nav-menu">
+                <ul class="header__nav-menu__list">
+                    <li class="{%if page_id == 'home' %}active{% endif %}"><a href="index.html">Home</a></li>
+                    <li class="{%if page_id == 'events' %}active{% endif %}"><a href="events.html">Events</a></li>
+                    <li class="{%if page_id == 'membership' %}active{% endif %}"><a href="membership.html">Membership</a></li>
+                    <li class="{%if page_id == 'scrapbook' %}active{% endif %}"><a href="scrapbook.html">Scrapbook</a></li>
+                    <li class="{%if page_id == 'resources' %}active{% endif %}"><a href="resources.html">Resources</a></li>
+                    <li class="{%if page_id == 'contact' %}active{% endif %}"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+           </nav>
+        </div>
+   </div>
+</header>

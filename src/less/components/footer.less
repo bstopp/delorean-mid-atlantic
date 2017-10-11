@@ -1,0 +1,94 @@
+/* Template Footer
+==================================== */
+
+@import "../base/_vars";
+
+footer { 
+    background: @oxford-blue;
+    border-top: 1px solid @stainless-grey;
+    padding: 30px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    .footer__disclaimer { 
+        color: @light-grey;
+        font-size: 11px;
+    }
+    ul { 
+        padding: 0;
+        margin: 20px 0 0 0;
+        p, li { 
+            list-style: none;
+            margin: 8px 0;
+            font-size: 11px;
+            color: @light-grey;
+        }
+    }
+    a { 
+        color: @light-grey;
+        text-decoration: underline;
+        &:hover {
+            color: darken(@light-grey, 20%);
+        }
+    }
+    .footer__social-links {
+        li { 
+            display: inline-block;
+            margin: 0 10px;
+            a { 
+                text-decoration: none;
+            }
+        }
+        .footer__social-link__icon { 
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: @screen-xs-max) { 
+    footer { 
+        .footer__social-links { 
+            margin: 15px 0 10px 0;
+            .footer__social-link__text { 
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-sm) { 
+    footer { 
+        text-align: left;
+        border-width: 2px;
+        .footer__disclaimer { 
+            font-size: 10px;
+            margin-top: 15px;
+        }
+        ul { 
+            margin: 0;
+            li { 
+                margin: 15px 0;
+                line-height: 1.2em; 
+            }
+        }
+        .footer__social-links { 
+            margin: 0;
+            li { 
+                margin: 11px 0;
+                display: table;
+            }
+            .footer__social-link__icon { 
+                font-size: 18px;
+                margin-right: 5px;
+                padding-right: 8px;
+                vertical-align: middle;
+                display: table-cell;
+            }
+            .footer__social-link__text { 
+                display: inline;
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+}

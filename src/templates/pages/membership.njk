@@ -1,0 +1,59 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% set page_title = "Membership page" %}
+{% set page_description = "This is the Membership page" %}
+{% set page_keywords = "keywords, keywords, keywords" %}
+
+{% set page_id = "membership" %}
+
+{% block content %}
+    
+    <div class="container">
+        <main>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Membership</h1>
+                    <p>The DeLorean Mid-Atlantic Club is an independent DeLorean club serving the middle Atlantic states of the USA. Entusiasts all over the world are welcome to become a member. You do not need to own a DeLorean to participate.</p>
+                    <h2>Membership Benefits</h2>
+                    <ul>
+                        <li>Attend our annual events including the Spring Social, Summer Fun Run, Fall Foliage Tour and Holiday Party*</li>
+                        <li>Complimentary door adjustments and car inspection at the spring social</li>
+                        <li>Participate in tech sessions and guest speakers at club events</li>
+                        <li>DeLorean rental requests are forwarded to the members</li>
+                        <li>Access to our "Members Only" Forum</li>
+                    </ul>
+                     <h3>$15 <span>per year</span></h3>
+                    <p>Dues provide membership from Jan 1 thru Dec 31. <br /> Dues paid after Oct 1 provide membership thru the following year</p>
+                    <div class="membership-paypal">
+                        <p>Checkout with PayPal</p>
+                        <a href="#" class="button button-orange" role="button">Become a Member</a>
+                        <img src="img/paypal-cards.png" />
+                    </div> 
+                    <p>To pay by check, <a href="#">download the printable membership application</a>. <br />Please make your check payable to "DeLorean Mid-Atlantic Club"</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="img/door-adjustment.png" />
+                    <img src="img/regraining.png" />
+                </div>
+            </div>
+
+            <hr />
+            <div class="disclaimer">
+                <p><small><b>* RELEASE OF LIABILITY</b><br />
+                As a member of the DeLorean Mid-Atlantic Club, you agree to the following terms and conditions:</small></p>
+                <small>
+                <ol>
+                    <li>Members and their guests release the DeLorean Mid-Atlantic Club and its officers &amp; directors from any and all liablity for loss or injury relating to every event sponsored by the DeLorean Mid-Atlantic Club.</li>
+                    <li>Members and their guests release the sponsors of any DeLorean Mid-Atlantic activity from any and all liability for loss or injury.</li>
+                    <li>Members and their guests release the DeLorean Mid-Atlantic Club, its officers and directors and all its members from any and all liability for advice and assistance in the maintenance of any automotive vehicle. All advice and assistance is at the members own risk.</li>
+                    <li>The member and their guests agree that participation in activities related to the DeLorean Mid-Atlantic Club is at their own risk. If you have any questions please contact the officers at <a href="mailto:officers@deloreanmidatlantic.com">officers@deloreanmidatlantic.com</a>.</li>
+                </ol>
+                </small>
+            </div>
+        
+        </main> 
+    </div>
+
+{% endblock %}

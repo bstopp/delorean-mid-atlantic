@@ -1,0 +1,61 @@
+<!-- events.njk -->
+
+{% extends "layouts/layout.njk" %}
+
+{% set page_title = "Events page" %}
+{% set page_description = "This is the events list page" %}
+{% set page_keywords = "keywords, keywords, keywords" %}
+
+{% set page_id = "events" %}
+
+{% block content %}
+    
+    <div class="container">
+        <main>
+    
+        <h1>Events</h1>
+            
+        {% for event in events %}
+            
+        <div class="media-object">
+            <div class="media-img">
+                <img src="img/spring-social.png" alt="...">
+            </div>
+            <div class="media-body">
+                <h4 class="media-pretitle">{{event.date}}</h4>
+                <h2 class="media-title">{{event.name}}</h2>
+                <h5 class="media-subtitle"><a href="#" title="">{{event.location}}</a></h5>
+                <address><a href="#" title="">3419 Route 46, Parsippany, NJ 07054</a>
+                </address>
+                <p class="media-description">Tech session &amp; group social, with a nice dinner in the evening.  Get your car dusted off for spring &amp; find out what problems may exist with your car.</p>
+                <a href="#" class="button button-arrow">Event Details</a> 
+            </div>
+        </div>
+        
+        <hr />
+                        
+        {% endfor %}
+        
+            
+        <div class="member-banner">
+        <div class="member-banner-copy">
+            <h2 class="member-banner-title">Become a Member</h2>
+            <p class="member-banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ipsum dolor. Nam pharetra risus sem, ut posuere mi blandit vel. Cras gravida justo molestie consectetur varius. Proin lobortis velit ut neque molestie malesuada.</p>
+            <a href="#" class="button" role="button">Join Now</a>
+        </div>
+        <div class="member-banner-photo">
+            <div class="member-banner-photo-spacer" title="Club Group Photo" style="background-image:url('img/group-photo.png');"></div>
+        </div>
+    </div>
+    <!-- end .member-banner -->
+            
+            </main>
+        
+        
+    </div> 
+        
+        
+
+    
+    
+{% endblock %}

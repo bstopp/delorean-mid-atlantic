@@ -1,0 +1,27 @@
+// Mixins
+// ====================================
+
+
+// Responsive utilities
+// -------------------------
+.responsive-visibility() {
+    display: block !important;
+    tr& { 
+        display: table-row !important; 
+    }
+    th&,
+    td& { 
+        display: table-cell !important; 
+    }
+}
+
+.responsive-invisibility() {
+    display: none !important;
+    tr& { 
+        display: none !important; 
+    }
+    th&,
+    td& { 
+        display: none !important; 
+    }
+}
