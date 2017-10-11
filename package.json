@@ -8,8 +8,8 @@
     "browserify": "^14.4.0",
     "gulp-browserify": "^0.5.1",
     "gulp-cli": "^1.4.0",
-    
-    "npm-check-updates": "^2.13.0",
+    "gulp-dest": "^0.2.3",
+    "npm-check-updates": "^2.13.0"
   },
   "devDependencies": {
     "del": "^3.0.0",

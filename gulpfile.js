@@ -10,8 +10,8 @@ var gulp            = require('gulp'),
     nunjucks        = require('gulp-nunjucks'),
     nunjucksRender  = require('gulp-nunjucks-render'),
     browserify      = require('gulp-browserify'),
-    data            = require('gulp-data');
-
+    data            = require('gulp-data')
+    //dest          = require('gulp-dest')
 
 // Fonts
 gulp.task('fonts', function () {
@@ -76,7 +76,7 @@ gulp.task('html', function() {
         
         // Adding data to Nunjucks
         .pipe(data(function() {
-            //return require('./src/data/*.json')
+            return require('./src/data/events.json')
         }))
     
         // Renders template with nunjucks
