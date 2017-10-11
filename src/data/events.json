@@ -1,4 +1,4 @@
-[{
+{ "events": [{
         "name" : "spring social",
         "date": "April 24, 2017",
         "location": "Jon Miller Car Care",
@@ -32,3 +32,4 @@
         "dinnerAddress": "123 Awesome Street",
         "dinnerWebsite": "url"
 }]
+}
