@@ -2,6 +2,7 @@ var gulp            = require('gulp'),
     browserSync     = require('browser-sync').create(),
     gutil           = require('gulp-util'),
     less            = require('gulp-less'),
+    print           = require('gulp-print'),
     imagemin        = require('gulp-imagemin'),
     autoprefixer    = require('gulp-autoprefixer'),
     rename          = require('gulp-rename'),
@@ -10,8 +11,10 @@ var gulp            = require('gulp'),
     nunjucks        = require('gulp-nunjucks'),
     nunjucksRender  = require('gulp-nunjucks-render'),
     browserify      = require('gulp-browserify'),
-    data            = require('gulp-data')
-    //dest          = require('gulp-dest')
+    data            = require('gulp-data'),
+    dest            = require('gulp-dest');
+
+var events = require('./src/data/events.json');
 
 // Fonts
 gulp.task('fonts', function () {
@@ -69,38 +72,41 @@ gulp.task('scripts', function() {
 
 
 // HTML pages
-gulp.task('html', function() {
+gulp.task('site', function() {
     gutil.log(gutil.colors.green('Compiling HTML Templates'));
     // Gets .html and .nunjucks files in pages
-    return gulp.src('src/templates/pages/*.+(html|njk)')
-        
+    return gulp.src('src/templates/pages/[!\{]*+(html|njk)')
         // Adding data to Nunjucks
         .pipe(data(function() {
-            return require('./src/data/events.json')
-        }))
-    
+          return { events: events }; }
+        ))
+
         // Renders template with nunjucks
         .pipe(nunjucksRender({ path: ['src/templates'] }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist'));
 });
 
 
-gulp.task('events', function() {  
-    
-    var events = require('./src/data/events.json');
- 
-    for(var i=0; i<events.length; i++) {
-        var event = events[i],fileName = event.fullName.replace(/ +/g, '-').toLowerCase();
+gulp.task('events', function() {
+
+    gulp.src('src/templates/pages/[\{]**+(html|njk)').pipe(print());
+    events.forEach(function(e) {
+      var filename = e.name.replace(/ +/g, '-').toLowerCase();
         gutil.log("Filename: " + filename);
-        
-        gulp.src('pages/event-detail.njk')
-            .pipe(nunjucks.compile(e))
-            .pipe(rename(fileName + ".html"))
-            .pipe(gulp.dest('dist/event-detail'));
-    }
+        gulp.src('src/templates/pages/[\{]**+(html|njk)')
+        // Adding data to Nunjucks
+          .pipe(data(function() {
+            return e ; }
+          ))
+          // Renders template with nunjucks
+          .pipe(nunjucksRender({ path: ['src/templates'] }))
+          .pipe(dest("dist", { basename: filename + '-detail', ext: '.html' }))
+          .pipe(gulp.dest('.'));
+    });
     
 });
 
+gulp.task('html', ['site', 'events']);
 
 // Clean out destination folder prior to build
 gulp.task('clean', function() {

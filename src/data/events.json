@@ -1,35 +1,38 @@
-{ "events": [{
-        "name" : "spring social",
-        "date": "April 24, 2017",
-        "location": "Jon Miller Car Care",
-        "description": "This is the description",
-        "hotelLocation": "Holiday Inn",
-        "hotelAddress": "123 Main Street Waretown, NJ",
-        "hotelPhone": "732 555 1234",
-        "dinnerLocation": "Awesome Dinner Place",
-        "dinnerAddress": "123 Awesome Street",
-        "dinnerWebsite": "url"
-    },{
-        "name" : "summer fun run",
-        "date": "August 15, 2017",
-        "location": "Adventure Awaits",
-        "description": "This is the description",
-        "hotelLocation": "Comfort Inn",
-        "hotelAddress": "123 Main Street Waretown, NJ",
-        "hotelPhone": "732 555 1234",
-        "dinnerLocation": "Awesome Dinner Place",
-        "dinnerAddress": "123 Awesome Street",
-        "dinnerWebsite": "url"
-    },{
-        "name" : "fall foliage tour",
-        "date": "October 20-22, 2017",
-        "location": "Stoudsburg, PA",
-        "description": "This is the description",
-        "hotelLocation": "Holiday Inn",
-        "hotelAddress": "123 Main Street Waretown, NJ",
-        "hotelPhone": "732 555 1234",
-        "dinnerLocation": "Awesome Dinner Place",
-        "dinnerAddress": "123 Awesome Street",
-        "dinnerWebsite": "url"
-}]
-}
+[
+  {
+    "name": "spring social",
+    "date": "April 24, 2017",
+    "location": "Jon Miller Car Care",
+    "description": "This is the description",
+    "hotelLocation": "Holiday Inn",
+    "hotelAddress": "123 Main Street Waretown, NJ",
+    "hotelPhone": "732 555 1234",
+    "dinnerLocation": "Awesome Dinner Place",
+    "dinnerAddress": "123 Awesome Street",
+    "dinnerWebsite": "url"
+  },
+  {
+    "name": "summer fun run",
+    "date": "August 15, 2017",
+    "location": "Adventure Awaits",
+    "description": "This is the description",
+    "hotelLocation": "Comfort Inn",
+    "hotelAddress": "123 Main Street Waretown, NJ",
+    "hotelPhone": "732 555 1234",
+    "dinnerLocation": "Awesome Dinner Place",
+    "dinnerAddress": "123 Awesome Street",
+    "dinnerWebsite": "url"
+  },
+  {
+    "name": "fall foliage tour",
+    "date": "October 20-22, 2017",
+    "location": "Stoudsburg, PA",
+    "description": "This is the description",
+    "hotelLocation": "Holiday Inn",
+    "hotelAddress": "123 Main Street Waretown, NJ",
+    "hotelPhone": "732 555 1234",
+    "dinnerLocation": "Awesome Dinner Place",
+    "dinnerAddress": "123 Awesome Street",
+    "dinnerWebsite": "url"
+  }
+]
